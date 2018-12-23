@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
+    "start:dev": "webpack-dev-server",
     "lint": "./node_modules/.bin/eslint src/**/*.js"
   },
   "author": "Rafael Bertelli <rafaelbertelli89@gmail.com>",
