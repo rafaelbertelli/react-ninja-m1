@@ -1,11 +1,23 @@
-'use strict'
-
 import React from 'react'
+import Presentation from './presentation'
 
-const App = React.createClass({
-  render: function() {
-    return <div>Aplicação!</div>
+class App extends React.Component {
+
+  state = {
+    name: 'Rafael',
+    lastname: 'Borges'
   }
-})
 
-export default App;
+  render () {
+    return (
+      <div>
+        <Presentation />
+        <Presentation { ...this.state } />
+        <Presentation name='João' />
+        <Presentation name={[1,2,3]} />
+      </div>
+    )
+  }
+}
+
+export default App
