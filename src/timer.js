@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 
 export default class Timer extends Component {
-  state = {
-    timer: 0
+
+  constructor() {
+    super()
+    
+    this.state = { timer: 0 }
   }
 
   chrono = () => {
