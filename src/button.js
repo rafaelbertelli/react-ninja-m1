@@ -8,4 +8,8 @@ const Button = props => {
   )
 }
 
+Button.propTypes = {
+  onClick: React.PropTypes.func
+}
+
 export default Button
